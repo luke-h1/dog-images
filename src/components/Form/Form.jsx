@@ -17,6 +17,12 @@ const Form = ({ title }) => {
     }
   };
 
+  const clearDoggos = () => {
+    setText('');
+    setData('');
+    setLoading(false);
+  };
+
   const searchDogs = async (text, i) => {
     setLoading(true);
     const BASE_URL = `https://dog.ceo/api/breed/${text}/images/random/5`;
@@ -51,6 +57,11 @@ const Form = ({ title }) => {
           />
           <input type="submit" value="Submit" className="btn" />
         </form>
+        {data.length > 0 && (
+          <button className="clear-btn" onClick={clearDoggos}>
+            Clear Results
+          </button>
+        )}
         <div className="doggo-container">{data}</div>
       </div>
     </>
