@@ -1,4 +1,4 @@
-.about-wrapper { 
+.about-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,29 +6,27 @@
   min-height: 100vh;
 }
 
-.about-title { 
-  margin-bottom: 15px; 
-  h2 { 
+.about-title {
+  margin-bottom: 15px;
+  h2 {
     max-width: 50%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
-  
 }
 
-.small { 
+.small {
   margin-top: 15px;
 }
 
-
-.project-link { 
+.project-link {
   color: #000;
 }
 
-.project-github { 
+.project-github {
   color: #000;
   margin-top: 2rem;
   font-size: 35px;
-  &:hover { 
-    color: #CB769E;
+  &:hover {
+    color: #cb769e;
   }
 }
