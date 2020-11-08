@@ -22,6 +22,8 @@ const Form = ({ title }) => {
     const BASE_URL = `https://dog.ceo/api/breed/${text}/images/random/5`;
     const res = await axios.get(`${BASE_URL}`);
     console.log(res.data);
+    setLoading(false);
+
     const results = res.data.message.map((dog) => (
       <img src={dog} className="doggo-image" alt="dogs" />
     ));
@@ -30,12 +32,12 @@ const Form = ({ title }) => {
   };
   const onChange = (e) => setText(e.target.value);
 
-
-
-  if(loading && <Loading />) 
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
-    <Load>
+    <>
       <div className="form-wrapper">
         <h2 className="form-title">{title}</h2>
         <form className="form" onSubmit={onSubmit}>
@@ -51,7 +53,7 @@ const Form = ({ title }) => {
         </form>
         <div className="doggo-container">{data}</div>
       </div>
-    </Loading>
+    </>
   );
 };
 
