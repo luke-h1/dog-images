@@ -1339,9 +1339,9 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^7.28.1"
 
-"@testing-library/user-event@^12.6.0":
-  version "12.6.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-12.6.0.tgz#2d0229e399eb5a0c6c112e848611432356cac886"
+"@testing-library/user-event@^13.1.6":
+  version "13.1.6"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.1.6.tgz#3371aa3ea03378cca8abf1c9dd3ce54f276de347"
   dependencies:
     "@babel/runtime" "^7.12.5"
 
